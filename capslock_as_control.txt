@@ -1,0 +1,2 @@
+# Make capslock as control key
+setxkbmap -option ctrl:nocaps
