@@ -1,0 +1,7 @@
+Morning:
+	- meeting
+	- install elk on virtual box centos 6.5 (not found java_home)
+	- install logstash-forwarder (cannot start service)
+Afternoon:
+	- elk on monkey not work
+	-> nothing process
