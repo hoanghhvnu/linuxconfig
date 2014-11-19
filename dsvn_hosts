@@ -1,0 +1,15 @@
+127.0.0.1	mail localhost
+127.0.0.1	mail.proof.vn mail
+127.0.1.1	monkey
+#192.168.0.232	work.datasection.com.vn
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+123.30.186.121 chrome-ext 
+192.168.0.206 server
+192.168.56.102 cent2
+162.243.86.85 lgs-sv
+107.170.19.113 aff
