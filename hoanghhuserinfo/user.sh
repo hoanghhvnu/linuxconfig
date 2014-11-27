@@ -24,6 +24,12 @@ for i in $(ls -d */); do
 	sudo mkdir ${SSH_DIR}
     fi
     sudo cat ./${USER_NAME}/* >> ${SSH_DIR}/authorized_keys
+    if [ $? -eq 0 ]; then
+	echo "Add ssh public key to user '${USER_NAME}' successfully!"
+    else
+        echo "Fail to add ssh public key to '${USER_NAME}'"
+	continue
+    fi
     sudo chmod 600 ${SSH_DIR}/authorized_keys
     sudo chown ${USER_NAME}:${USER_NAME} -R ${SSH_DIR}
 done
