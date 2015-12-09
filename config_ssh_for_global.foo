@@ -1,0 +1,112 @@
+Host dsv00
+    Hostname 159.203.102.210
+    User dzung
+    IdentityFile ~/.ssh/dungpd/anbu_rsa
+Host dsv01
+    Hostname 159.203.113.209
+    User dzung
+    IdentityFile ~/.ssh/dungpd/anbu_rsa
+Host dsv02
+    Hostname 159.203.117.174
+    User dzung
+    IdentityFile ~/.ssh/dungpd/anbu_rsa
+Host dsv03
+    Hostname 159.203.114.138
+    User dzung
+    IdentityFile ~/.ssh/dungpd/anbu_rsa
+Host dsv04
+    Hostname 159.203.68.31
+    User dzung
+    IdentityFile ~/.ssh/dungpd/anbu_rsa
+Host dsv05
+    Hostname 159.203.125.106
+    User dzung
+    IdentityFile ~/.ssh/dungpd/anbu_rsa
+Host dsv06
+    Hostname 159.203.116.232
+    User dzung
+    IdentityFile ~/.ssh/dungpd/anbu_rsa
+Host dsv07
+    Hostname 159.203.83.164
+    User dzung
+    IdentityFile ~/.ssh/dungpd/anbu_rsa
+Host dsv08
+    Hostname 159.203.107.217
+    User dzung
+    IdentityFile ~/.ssh/dungpd/anbu_rsa
+Host dsv09
+    Hostname 159.203.97.112
+    User dzung
+    IdentityFile ~/.ssh/dungpd/anbu_rsa
+Host dsv10
+    Hostname 159.203.85.97
+    User dzung
+    IdentityFile ~/.ssh/dungpd/anbu_rsa
+Host dsv11
+    Hostname 159.203.84.42
+    User dzung
+    IdentityFile ~/.ssh/dungpd/anbu_rsa
+Host dsv12
+    Hostname 159.203.126.157
+    User dzung
+    IdentityFile ~/.ssh/dungpd/anbu_rsa
+Host dsv13
+    Hostname 159.203.92.116
+    User dzung
+    IdentityFile ~/.ssh/dungpd/anbu_rsa
+Host dsv14
+    Hostname 159.203.116.250
+    User dzung
+    IdentityFile ~/.ssh/dungpd/anbu_rsa
+Host dsv15
+    Hostname 159.203.113.82
+    User dzung
+    IdentityFile ~/.ssh/dungpd/anbu_rsa
+Host dsv16
+    Hostname 159.203.117.66
+    User dzung
+    IdentityFile ~/.ssh/dungpd/anbu_rsa
+Host dsv17
+    Hostname 159.203.124.48
+    User dzung
+    IdentityFile ~/.ssh/dungpd/anbu_rsa
+Host dsv18
+    Hostname 45.55.62.58
+    User dzung
+    IdentityFile ~/.ssh/dungpd/anbu_rsa
+Host dsv19
+    Hostname 159.203.79.39
+    User dzung
+    IdentityFile ~/.ssh/dungpd/anbu_rsa
+Host dsv20
+    Hostname 45.55.37.203
+    User dzung
+    IdentityFile ~/.ssh/dungpd/anbu_rsa
+Host dsv21
+    Hostname 159.203.124.56
+    User dzung
+    IdentityFile ~/.ssh/dungpd/anbu_rsa
+Host dsv22
+    Hostname 159.203.78.138
+    User dzung
+    IdentityFile ~/.ssh/dungpd/anbu_rsa
+Host dsv23
+    Hostname 159.203.143.139
+    User dzung
+    IdentityFile ~/.ssh/dungpd/anbu_rsa
+Host dsv24
+    Hostname 104.236.237.45
+    User dzung
+    IdentityFile ~/.ssh/dungpd/anbu_rsa
+Host dsv25
+    Hostname 104.236.126.200
+    User dzung
+    IdentityFile ~/.ssh/dungpd/anbu_rsa
+Host dsv26
+    Hostname 104.131.28.218
+    User dzung
+    IdentityFile ~/.ssh/dungpd/anbu_rsa
+Host dsv27
+    Hostname 45.55.162.41
+    User dzung
+    IdentityFile ~/.ssh/dungpd/anbu_rsa
